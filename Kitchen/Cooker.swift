@@ -15,7 +15,11 @@ protocol Cooker {
     
     func cooker_info()
     func start_cooking()
-    func stop_cooking()
+    func use_tool(tool: Tool)
+    func cook_ingredient(ingredient: Ingredient)
+    func use_utensil(utensil: Utensil)
+    func follow_step(step: Step)
+    func finish_cooking()
 }
 
 class Amateur : Cooker{
@@ -37,9 +41,25 @@ class Amateur : Cooker{
         cooker_info()
         print("AMATEUR Cooker \(name) starts cooking!")
     }
+
+    func use_tool(tool: Tool) {
+        print("\(tool.name)")
+    }
     
-    func stop_cooking() {
-        print("AMATEUR Cooker \(name) stops cooking!")
+    func cook_ingredient(ingredient: Ingredient) {
+        print("\(ingredient.name)")
+    }
+    
+    func use_utensil(utensil: Utensil) {
+        print("\(utensil.name)")
+    }
+    
+    func follow_step(step: Step) {
+        print("\(step.name)")
+    }
+    
+    func finish_cooking() {
+        print("AMATEUR Cooker \(name) finished cooking!")
     }
 }
 
@@ -62,9 +82,25 @@ class Chef : Cooker {
         cooker_info()
         print("CHEF Cooker \(name) starts cooking!")
     }
+
+    func use_tool(tool: Tool) {
+        print("\(tool.name)")
+    }
     
-    func stop_cooking() {
-        print("CHEF Cooker \(name) stops cooking!")
+    func cook_ingredient(ingredient: Ingredient) {
+        print("\(ingredient.name)")
+    }
+    
+    func use_utensil(utensil: Utensil) {
+        print("\(utensil.name)")
+    }
+    
+    func follow_step(step: Step) {
+        print("\(step.name)")
+    }
+    
+    func finish_cooking() {
+        print("CHEF Cooker \(name) finished cooking!")
     }
 }
 
@@ -74,8 +110,14 @@ enum CookerTypes{
 }
 
 class CookerFactory{
+
+    private static var sharedCookerFactory = CookerFactory()
     
-    static func getCooker(CookerType cookerType : CookerTypes, CookerName cookerName : String, CookerAge cookerAge : Int, CookerGender cookerGender : String)->Cooker{
+    class func shared() -> CookerFactory {
+        return sharedCookerFactory
+    }
+    
+    func getCooker(CookerType cookerType : CookerTypes, CookerName cookerName : String, CookerAge cookerAge : Int, CookerGender cookerGender : String)->Cooker{
         switch cookerType {
         case .Amateur:
             return Amateur(AmateurName: cookerName,AmateurAge: cookerAge,AmateurGender: cookerGender)

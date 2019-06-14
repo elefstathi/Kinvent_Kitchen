@@ -35,7 +35,13 @@ enum ToolTypes{
 
 class ToolFactory{
     
-    static func getTool(ToolType toolType : ToolTypes, ToolName toolName : String)->Tool{
+    private static var sharedToolFactory = ToolFactory()
+    
+    class func shared() -> ToolFactory {
+        return sharedToolFactory
+    }
+    
+    func getTool(ToolType toolType : ToolTypes, ToolName toolName : String)->Tool{
         switch toolType {
         case .ElectricalTool:
             return ElectricalTool(ElectricalToolName: toolName)

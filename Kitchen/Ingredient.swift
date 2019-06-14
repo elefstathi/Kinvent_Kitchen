@@ -44,8 +44,14 @@ enum IngredientTypes{
 }
 
 class IngredientFactory{
+
+    private static var sharedIngredientFactory = IngredientFactory()
     
-    static func getIngredient(IngredientType ingredientType : IngredientTypes, IngredientName ingredientName : String)->Ingredient{
+    class func shared() -> IngredientFactory {
+        return sharedIngredientFactory
+    }
+    
+    func getIngredient(IngredientType ingredientType : IngredientTypes, IngredientName ingredientName : String)->Ingredient{
         switch ingredientType {
         case .Vegetable:
             return Vegetable(VegetableName: ingredientName)
