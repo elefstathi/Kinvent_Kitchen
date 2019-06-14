@@ -3,4 +3,4 @@
 
 Class Diagram 
 
-![alt text] (https://github.com/elefstathi/Kinvent_Kitchen/blob/master/Kinvent_class_diagram.png?raw=true)
+![alt text] (https://github.com/elefstathi/Kinvent_Kitchen/blob/master/Kinvent_class_diagram.png)
