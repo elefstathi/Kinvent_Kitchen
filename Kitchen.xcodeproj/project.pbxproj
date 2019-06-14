@@ -14,6 +14,11 @@
 		C78D3B1022B3E3520079DD1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78D3B0E22B3E3520079DD1C /* LaunchScreen.storyboard */; };
 		C78D3B1B22B3E3520079DD1C /* KitchenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D3B1A22B3E3520079DD1C /* KitchenTests.swift */; };
 		C78D3B2622B3E3520079DD1C /* KitchenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D3B2522B3E3520079DD1C /* KitchenUITests.swift */; };
+		C78D3B3422B3E3D90079DD1C /* Kitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D3B3322B3E3D90079DD1C /* Kitchen.swift */; };
+		C78D3B3622B3E9350079DD1C /* Cooker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D3B3522B3E9350079DD1C /* Cooker.swift */; };
+		C78D3B3822B3E9C30079DD1C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D3B3722B3E9C30079DD1C /* Ingredient.swift */; };
+		C78D3B3A22B3EA170079DD1C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D3B3922B3EA170079DD1C /* Recipe.swift */; };
+		C78D3B3C22B3EA6B0079DD1C /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D3B3B22B3EA6B0079DD1C /* Tool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		C78D3B2122B3E3520079DD1C /* KitchenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitchenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78D3B2522B3E3520079DD1C /* KitchenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenUITests.swift; sourceTree = "<group>"; };
 		C78D3B2722B3E3520079DD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C78D3B3322B3E3D90079DD1C /* Kitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen.swift; sourceTree = "<group>"; };
+		C78D3B3522B3E9350079DD1C /* Cooker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooker.swift; sourceTree = "<group>"; };
+		C78D3B3722B3E9C30079DD1C /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		C78D3B3922B3EA170079DD1C /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		C78D3B3B22B3EA6B0079DD1C /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				C78D3B0522B3E3500079DD1C /* AppDelegate.swift */,
+				C78D3B3322B3E3D90079DD1C /* Kitchen.swift */,
+				C78D3B3B22B3EA6B0079DD1C /* Tool.swift */,
+				C78D3B3922B3EA170079DD1C /* Recipe.swift */,
+				C78D3B3722B3E9C30079DD1C /* Ingredient.swift */,
+				C78D3B3522B3E9350079DD1C /* Cooker.swift */,
 				C78D3B0722B3E3500079DD1C /* ViewController.swift */,
 				C78D3B0922B3E3500079DD1C /* Main.storyboard */,
 				C78D3B0C22B3E3520079DD1C /* Assets.xcassets */,
@@ -257,6 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C78D3B0822B3E3500079DD1C /* ViewController.swift in Sources */,
+				C78D3B3422B3E3D90079DD1C /* Kitchen.swift in Sources */,
+				C78D3B3822B3E9C30079DD1C /* Ingredient.swift in Sources */,
+				C78D3B3C22B3EA6B0079DD1C /* Tool.swift in Sources */,
+				C78D3B3A22B3EA170079DD1C /* Recipe.swift in Sources */,
+				C78D3B3622B3E9350079DD1C /* Cooker.swift in Sources */,
 				C78D3B0622B3E3500079DD1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59482487F9;
 				INFOPLIST_FILE = Kitchen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59482487F9;
 				INFOPLIST_FILE = Kitchen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
